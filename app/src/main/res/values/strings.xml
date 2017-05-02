@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TestR</string>
+    <string name="button_name">Submit</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="input_error">Error</string>
+    <string name="error_message">Enter first name and last name</string>
+</resources>

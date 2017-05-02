@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected TextView lName;
     protected TextView fName;
     protected Button submit;
-    protected Context context;
+    protected Context contexts;
     String fname;
     String lname;
 
@@ -44,14 +44,15 @@ public class MainActivity extends AppCompatActivity {
                     AlertDialog dialog = builder.create();
                     builder.show();
                 } else
-                    fullName();
+                    fullName(fname, lname, MainActivity.this);
                 //Toast.makeText(MainActivity.this,fullname,Toast.LENGTH_LONG).show();
             }
         });
     }
-    private void fullName() {
-        String fullname = fname + "  " + lname;
-        Toast.makeText(MainActivity.this, fullname, Toast.LENGTH_LONG).show();
+    private void fullName(String fn, String ln, Context context) {
+
+        String fullname = fn + "  " + ln;
+        Toast.makeText(context, fullname, Toast.LENGTH_LONG).show();
     }
 
 }
