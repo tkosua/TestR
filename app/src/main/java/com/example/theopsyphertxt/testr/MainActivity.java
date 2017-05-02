@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected TextView lName;
     protected TextView fName;
     protected Button submit;
-    protected Context contexts;
+    Context contexts;
     String fname;
     String lname;
 
