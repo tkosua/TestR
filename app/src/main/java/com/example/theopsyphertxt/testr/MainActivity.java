@@ -12,12 +12,9 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    protected TextView lName;
-    protected TextView fName;
-    protected Button submit;
-    Context contexts;
-    String fname;
-    String lname;
+    protected TextView lName;   //receives last name input
+    protected TextView fName;   //receives first name input
+    protected Button submit;    //submit button
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,31 +25,48 @@ public class MainActivity extends AppCompatActivity {
         lName = (TextView) findViewById(R.id.lastName);
         submit = (Button) findViewById(R.id.button);
 
+        //below what happens onclick of button submit
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fname = fName.getText().toString().trim();
-                lname = lName.getText().toString().trim();
+                //retrieve and store input in below
+                String fname = fName.getText().toString().trim();
+                String lname = lName.getText().toString().trim();
 
-                //String fullname = fname + "  " + lname;
-
-                if (fname.isEmpty() || lname.isEmpty()) {
-                    AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                    builder.setTitle(R.string.input_error)
-                            .setMessage(R.string.error_message)
-                            .setPositiveButton(android.R.string.ok, null);
-                    AlertDialog dialog = builder.create();
-                    builder.show();
-                } else
-                    fullName(fname, lname, MainActivity.this);
+                //ensure inputs are not empty
+                if (fname.isEmpty() && lname.isEmpty()) {
+                    String msg = getString(R.string.error_msg1);
+                    createDialogue(msg);
+                }
+                else if (fname.isEmpty()) {
+                    String msg = getString(R.string.error_msg2);
+                    createDialogue(msg);
+                }
+                else if (lname.isEmpty()) {
+                    String msg = getString(R.string.error_msg3);
+                    createDialogue(msg);
+                }
+                else
+                    fullName(fname, lname, MainActivity.this);  //when details are correct
                 //Toast.makeText(MainActivity.this,fullname,Toast.LENGTH_LONG).show();
             }
         });
     }
-    private void fullName(String fn, String ln, Context context) {
 
+    private void createDialogue(String msg) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+        builder.setTitle(R.string.input_error)
+                .setMessage(msg)
+                .setPositiveButton(android.R.string.ok, null);
+        AlertDialog dialog = builder.create();
+        builder.show();
+    }
+
+    private void fullName(String fn, String ln, Context context) {
         String fullname = fn + "  " + ln;
         Toast.makeText(context, fullname, Toast.LENGTH_LONG).show();
+        //above function is generic so it can be called elsewhere easily
     }
+
 
 }
