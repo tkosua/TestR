@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.example.theopsyphertxt.testr.MainActivity">
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_first_name"
+            android:textColor="@color/colorClay"
+            android:textColorHint="@color/colorCider"
+            android:inputType="textPersonName"
+            android:layout_alignBottom="@+id/lastName"
+            android:layout_alignStart="@+id/lastName"
+            android:layout_marginBottom="60dp" />
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_last_name"
+            android:textColor="@color/colorClay"
+            android:textColorHint="@color/colorCider"
+            android:inputType="textPersonName"
+            android:layout_alignBottom="@+id/button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button_custom"
+        android:ems="10"
+        android:text="@string/button_name"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+
+</RelativeLayout>

@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <!-- Tints and Shades of orange -->
+    <color name="colorBackground">#FF9900</color>
+    <color name="colorSpice">#7A3803</color>
+    <color name="colorClay">#804003</color>
+    <color name="colorRust">#8D4004</color>
+    <color name="colorCantaloupe">#FDA172</color>
+    <color name="colorMerigold">#FCAE1E</color>
+    <color name="colorHoney">#EC9706</color>
+    <color name="colorFire">#DD571C</color>
+    <color name="colorTiger">#FC6A03</color>
+    <color name="colorCider">#B56727</color>
+
 </resources>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TestR</string>
+    <string name="app_name">BLOWN</string>
     <string name="button_name">Submit</string>
     <string name="hint_last_name">Last Name</string>
     <string name="hint_first_name">First Name</string>
@@ -7,4 +7,7 @@
     <string name="error_msg1">Enter first name and last name</string>
     <string name="error_msg2">Enter first name</string>
     <string name="error_msg3">Enter last name</string>
+    <string name="blownaway">blown</string>
+    <string name="aim_to_surpise">SURPRISED? that\'s our aim </string>
+    <string name="tracing_the_fire">tracing the fire</string>
 </resources>
