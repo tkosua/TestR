@@ -5,7 +5,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorCider</item>
         <item name="colorPrimaryDark">@color/colorSpice</item>
-        <item name="colorAccent">@color/colorCantaloupe</item>
+        <item name="colorAccent">@android:color/holo_orange_light</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
