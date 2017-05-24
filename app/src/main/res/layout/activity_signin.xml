@@ -5,37 +5,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background"
+    android:background="@color/androidOrangeL"
     tools:context="com.example.theopsyphertxt.testr.MainActivity">
 
-        <EditText
-            android:id="@+id/firstName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/hint_first_name"
-            android:textColor="@color/colorClay"
-            android:textColorHint="@color/colorCider"
-            android:inputType="textPersonName"
-            android:layout_alignBottom="@+id/lastName"
-            android:layout_alignStart="@+id/lastName"
-            android:layout_marginBottom="60dp" />
+    <EditText
+        android:id="@+id/editxtFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_first_name"
+        android:textColor="@color/colorClay"
+        android:textColorHint="@color/colorCider"
+        android:inputType="textPersonName"
+        android:layout_alignBottom="@+id/editxtLastName"
+        android:layout_alignStart="@+id/editxtLastName"
+        android:layout_marginBottom="60dp" />
 
-        <EditText
-            android:id="@+id/lastName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/hint_last_name"
-            android:textColor="@color/colorClay"
-            android:textColorHint="@color/colorCider"
-            android:inputType="textPersonName"
-            android:layout_alignBottom="@+id/button"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="60dp" />
+    <EditText
+        android:id="@+id/editxtLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_last_name"
+        android:textColor="@color/colorClay"
+        android:textColorHint="@color/colorCider"
+        android:inputType="textPersonName"
+        android:layout_alignBottom="@+id/btnSubmit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -44,6 +44,6 @@
         android:ems="10"
         android:text="@string/button_name"
         android:textStyle="bold"
-        android:textSize="15dp"/>
+        android:textSize="15sp"/>
 
 </RelativeLayout>

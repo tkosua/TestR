@@ -21,9 +21,9 @@ public class SigninActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signin);
 
         //linking widgets from activity_signin.xml page
-        fName = (TextView) findViewById(R.id.firstName);
-        lName = (TextView) findViewById(R.id.lastName);
-        submit = (Button) findViewById(R.id.button);
+        fName = (TextView) findViewById(R.id.editxtFirstName);
+        lName = (TextView) findViewById(R.id.editxtLastName);
+        submit = (Button) findViewById(R.id.btnSubmit);
 
         //below what happens onclick of button submit
         submit.setOnClickListener(new View.OnClickListener() {

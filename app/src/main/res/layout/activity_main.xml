@@ -4,44 +4,58 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_orange_light">
+    android:background="@color/androidOrangeL">
+
+    <ImageButton
+        android:id="@+id/btnTrace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="traceClick"
+        android:src="@mipmap/ic_launcher"
+        android:padding="0dp"
+        android:contentDescription="@string/tracing_the_fire"
+        android:layout_above="@+id/txtBlown"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
 
     <TextView
-        android:id="@+id/blownAway"
+        android:id="@+id/txtBlown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@color/colorClay"
+        android:textColor="@color/colorMerigold"
+        android:background="@android:color/background_dark"
         android:textSize="60sp"
         android:textStyle="bold|italic"
-        android:layout_marginTop="40dp"
-        android:layout_alignParentStart="true" />
-
-    <ImageButton
-        android:id="@+id/traceButton"
-        android:layout_width="120dp"
-        android:layout_height="100dp"
-        android:onClick="traceClick"
-        android:src="@drawable/stripe"
-        android:contentDescription="@string/tracing_the_fire"
-        style="?borderlessButtonStyle"
-        android:layout_centerVertical="true"
+        android:layout_above="@+id/txtSurprise"
         android:layout_centerHorizontal="true"
-        android:paddingEnd="10dp"
-        android:paddingStart="10dp"/>
+        android:layout_marginBottom="90dp" />
+
 
     <TextView
-        android:id="@+id/aimSurprise"
+        android:id="@+id/txtSurprise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/aim_to_surpise"
+        android:text="@string/surprised"
         android:textStyle="italic|bold"
         android:textSize="20sp"
-        android:textColor="@color/colorClay"
+        android:textColor="@color/colorSpice"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/txtOurAim"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtOurAim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/our_aim"
+        android:textStyle="italic|bold"
+        android:textSize="20sp"
+        android:textColor="@color/colorSpice"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:layout_marginBottom="70dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_centerHorizontal="true"  />
 
 </RelativeLayout>
